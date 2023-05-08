@@ -23,7 +23,7 @@ let package = Package(
             name: "GeoJSONPackage",
             dependencies: ["AnyCodable"]),
         .testTarget(
-            name: "GeoJSONTests",
+            name: "GeoJSONPackageTests",
             dependencies: ["GeoJSONPackage"]),
     ]
 )

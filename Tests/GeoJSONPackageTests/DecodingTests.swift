@@ -1,5 +1,5 @@
 import XCTest
-import GeoJSON
+import GeoJSONPackage
 
 final class DecodingTests: XCTestCase {
     func testDecodeBoundingBox() throws {
