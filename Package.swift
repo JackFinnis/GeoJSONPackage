@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "GeoJSON",
+    name: "GeoJSONPackage",
     platforms: [
         .macOS(.v10_13),
         .iOS(.v11),
@@ -12,18 +12,18 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "GeoJSON",
-            targets: ["GeoJSON"]),
+            name: "GeoJSONPackage",
+            targets: ["GeoJSONPackage"]),
     ],
     dependencies: [
         .package(url: "https://github.com/flight-school/AnyCodable.git", from: "0.2.3"),
     ],
     targets: [
         .target(
-            name: "GeoJSON",
+            name: "GeoJSONPackage",
             dependencies: ["AnyCodable"]),
         .testTarget(
             name: "GeoJSONTests",
-            dependencies: ["GeoJSON"]),
+            dependencies: ["GeoJSONPackage"]),
     ]
 )
